@@ -23,6 +23,13 @@ p{
 section{
     margin-block: 40px;
 }
+.accent{
+    color:#6E84CF;
+}
+#first-paragraph{
+    color:#22466c;
+    font-size: 1.2rem;
+}
 body {
     font-family: sans-serif;
     font-size: 1.2rem;
