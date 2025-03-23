@@ -10,4 +10,15 @@ h1{
 body{
     background-color: rgb(250, 188, 250);
 }
+img{
+    max-inline-size: 100%;
+    text-align: center;
+    display: block;
+}
 
+.two-column-layout{
+    display: grid;
+    gap:60px;
+    margin-block-end: 60px;
+    @media (width > 600px) {grid-template-columns: 1fr 1fr;}
+}
