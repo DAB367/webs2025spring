@@ -3,6 +3,7 @@
 }
 
 h1{
+    font-size: clamp(2rem, 1rem+10vw, 5rem); /* Doesn't actually change since header is too small but wanted to add for practice. */
     background-color: rgb(38, 4, 70);
     color:#ffffff;
 }
