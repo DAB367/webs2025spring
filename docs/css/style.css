@@ -3,8 +3,10 @@
 }
 
 h1{
-    font-size: clamp(2rem, 1rem+10vw, 5rem); /* Doesn't actually change since header is too small but wanted to add for practice. */
+    text-align: center;
+    font-size: clamp(3rem, 4vw, 10rem); /* Change is minimal since header is too small but wanted to add for practice. */
     background-color: rgb(38, 4, 70);
+    padding: 10px;
     color:#ffffff;
 }
 
@@ -22,4 +24,16 @@ img{
     gap:60px;
     margin-block-end: 60px;
     @media (width > 600px) {grid-template-columns: 1fr 1fr;}
+}
+.primary-navigation ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display:flex;
+    gap:20px;
+}
+.primary-navigation a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
 }
