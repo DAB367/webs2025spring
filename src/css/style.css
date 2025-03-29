@@ -1,0 +1,94 @@
+@import "tailwindcss";
+*{
+    box-sizing: border-box;
+}
+
+/**** Body ****/
+h1{
+    text-align: center;
+    font-size: clamp(3rem, 4vw, 10rem); /* Change is minimal since header is too small but wanted to add for practice. */
+    background-color: rgb(38, 4, 70);
+    padding: 10px;
+    color:#ffffff;
+    margin:0%;
+}
+
+body{
+    background-color: rgb(93, 248, 212); /*Light mint*/
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+img{
+    max-inline-size: 90%;
+    text-align: center;
+    display: block;
+}
+
+.two-column-layout{
+    display: grid;    /*Use Grid display to create columns in page*/
+    gap:20px;         /*Add some space between columns*/
+    margin-block-end: 60px; /*Add some space after columns*/
+    @media (width > 600px) {grid-template-columns: 1fr 1fr;} /*Adjust layout for mobile or view smaller than 600px*/
+}
+/***** Navigation menu styling *****/
+.primary-navigation {
+    background-color: rgb(38, 4, 70); /* Dark Purple */
+    margin:0%;
+  }
+
+  .primary-navigation a {
+    color:  rgb(254, 254, 254);         /* White*/
+    font-weight: bold;
+  }
+
+  .primary-navigation ul {
+    list-style-type: none;  /* Hide the bullets */
+    display: flex;          /* Arrange horizontally, not vertically */
+    flex-wrap: wrap;
+  }
+
+  .primary-navigation li a {
+    display: block;
+    padding: 1em 2em;           /* Add a little space around each link */
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+  }
+
+  .primary-navigation .active, .primary-navigation a:hover, .primary-navigation a:focus   {
+    background-color: rgb(93, 248, 212); /*Light mint same as link color */
+    color:rgb(38, 4, 70);            /* Dark Purple, same as navbar */
+  }
+
+  .primary-navigation a:hover, .primary-navigation a:focus {
+  text-decoration: underline;
+}
+/**Add slideshow**/
+/* Slideshow container */
+.slideshow-container {
+  text-align: center;
+  border-color: blue;
+  border-style: dashed;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

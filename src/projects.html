@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <title>Projects</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <nav class="primary-navigation" aria-label="Primary Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="projects.html">Projects</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <h1>
+            Dana Briggs's Projects
+        </h1>
+           <!-- Slideshow container -->
+           <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade" text-align="center">
+                <div class="text">Visual Arugument Project</div>
+                <a href="#visual"><img src="Projects/AsFragileAsASpidersWeb.jpg"></a>
+            
+            </div>
+        
+            <div class="mySlides fade" text-align="center">
+                <div class="text">Audio Narrative Project</div>
+                <a href="#audio"><img src="Projects/BeachPic.jpg"></a>
+            
+            </div>
+
+        </div>
+        <div id="audio" class="two-column-layout"> 
+            <div>
+                  <img src="Projects/BeachPic.jpg" alt="Beach at sunrise with seagulls flying over waves">
+                  <audio controls><source  src="Projects/BeachConversation.mp3" type="audio/mpeg"/></audio>
+            </div>
+            <div>
+
+                <h3>A Beach Conversion</h3>
+                <p>This is an audio narrative project that I completed for my Composing Digital Media class in Spring 2025.</p>
+                <p>For more information on my project please <a href="https://github.com/DAB367/audio-narrative-2025spring">Visit my AudioNarrative Github Repo.</a></p>
+            </div> 
+        </div>
+        <div id="visual" class="two-column-layout"> 
+            <div>
+                  <img src="Projects/AsFragileAsASpidersWeb.jpg" alt="A spider's web with the Earth at it's center and fire starting to engulf it.">
+            </div>
+            <div>
+
+                <h3>As Fragile as a spider's web</h3>
+                <p>This is a visual argument project that I completed for my Composing Digital Media class in Spring 2025.</p>
+                <p>For more information on my project please <a href="https://github.com/DAB367/visual-argument-2025spring">Visit my Visual Argument Github Repo.</a></p>
+            </div> 
+        </div>
+
+             
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() 
+            {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); // Change image every 5 seconds
+            }
+            </script>
+    </body>
+    <footer>
+
+    </footer>
+
+</html>
