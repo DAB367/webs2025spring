@@ -13,16 +13,20 @@ h1{
 
 body{
     background-color: rgb(250, 188, 250); /*Light Purple*/
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
+
 img{
-    max-inline-size: 100%;
+    max-inline-size: 90%;
     text-align: center;
     display: block;
 }
 
 .two-column-layout{
     display: grid;    /*Use Grid display to create columns in page*/
-    gap:60px;         /*Add some space between columns*/
+    gap:20px;         /*Add some space between columns*/
     margin-block-end: 60px; /*Add some space after columns*/
     @media (width > 600px) {grid-template-columns: 1fr 1fr;} /*Adjust layout for mobile or view smaller than 600px*/
 }
@@ -32,7 +36,7 @@ img{
   }
 
   .primary-navigation a {
-    color:  rgb(250, 188, 250);         /* Light Purple */
+    color:  rgb(254, 254, 254);         /* White*/
     font-weight: bold;
   }
 
