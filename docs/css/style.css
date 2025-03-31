@@ -26,6 +26,12 @@ img{
     display: block;
 }
 
+.avatar {border-radius: 50%; 
+  width: 25%;
+  height: auto;
+  margin:auto;
+}
+
 .two-column-layout{
     display: grid;    /*Use Grid display to create columns in page*/
     gap:20px;         /*Add some space between columns*/
@@ -73,7 +79,7 @@ img{
   width: 400px;
   height: 400px;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
   margin: auto;
 }
 /* Hide the images by default */
