@@ -53,11 +53,12 @@ img{
     list-style-type: none;  /* Hide the bullets */
     display: flex;          /* Arrange horizontally, not vertically */
     flex-wrap: wrap;
+    margin: 0%;
   }
 
   .primary-navigation li a {
     display: block;
-    padding: 1em 2em;           /* Add a little space around each link */
+    padding: 1em 2em;           Add a little space around each link
     text-decoration-line: underline;
     text-decoration-style: wavy;
   }
@@ -70,17 +71,18 @@ img{
   .primary-navigation a:hover, .primary-navigation a:focus {
   text-decoration: underline;
 }
+
 /**Add slideshow**/
 /* Slideshow container */
 .slideshow-container {
-  text-align: center;
+  border-style: dashed;  
   border-color: blue;
-  border-style: dashed;
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
-  /* position: relative; */
-  margin: auto;
+  position: relative;
+  text-align: center; 
+  width: 400px; 
+  height: 400px; 
+  margin-left: auto;
+  margin-right:auto;
 }
 /* Hide the images by default */
 .mySlides {
