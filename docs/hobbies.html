@@ -3,6 +3,7 @@
     <header>
         <title>My Hobbies</title>
         <link href="css/style.css" rel="stylesheet">
+        <script src="script.js"></script>
         <nav class="primary-navigation" aria-label="Primary Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -13,25 +14,47 @@
     </header>
     <body>
         <img class="avatar" src="img/ProfessionalHeadShot.jpg" alt="A Headshot of Dana Briggs">
-        <h2>
+        <h2 class="primary-navigation">
             Hobbies:
         </h2>
-        <p>
-            <ul>
+        <p class="primary-navigation">
+            <ul class="primary-navigation">
                 <li>
-                    Crochet
+                    <a href="#crochet">Crochet</a>
                 </li>
                 <li>
-                    Video Games
+                    <a href="#video_games">Video Games</a>
                 </li>
                 <li>
-                    Hiking
+                    <a href="#hiking">Hiking</a>
                 </li>
                 <li>
-                    Pets
+                    <a href="#pets">Pets</a>
                 </li>
             </ul>
         </p>
+        <div id="audio" class="two-column-layout"> 
+            <div id="crochet">
+        <img src="img/crochet.jpg" alt="Overhead view of a crochet shawl on top of a flower blanket">
+            </div>
+            <div>
+                <h3>
+                    Crochet
+                </h3>
+            </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container" id="hiking">
+
+            <!-- Full-width images-->
+            <div class="mySlides fade" text-align="center">
+                <img src="img/Waimea.jpg" alt="View of Waimea canyon on a cloudy day from a hiking trail">
+            </div>
+        
+            <div class="mySlides fade" text-align="center">
+                <img src="img/Waimea1.jpg">
+            
+            </div>
+        </div>
     </body>
     <footer>
 

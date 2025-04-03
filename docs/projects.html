@@ -3,7 +3,7 @@
     <header>
         <title>Projects</title>
         <link href="css/style.css" rel="stylesheet">
-        <script src="script.js"></script>
+        <!-- <script src="script.js"></script> -->
         <nav class="primary-navigation" aria-label="Primary Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,18 +20,12 @@
            <!-- Slideshow container -->
            <div class="slideshow-container">
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade" text-align="center">
-                <a href="#visual"><img src="Projects/carousel1.jpg"></a>
-            
-            </div>
+            <!-- Full-width images-->
+                <a class="mySlides fade" href="#visual"><img src="Projects/carousel1.jpg"></a>
+                <a class="mySlides fade" href="#audio"><img src="Projects/carousel2.jpg"></a>
         
-            <div class="mySlides fade" text-align="center">
-                <a href="#audio"><img src="Projects/carousel2.jpg"></a>
-            
-            </div>
 
-        </div>
+            </div>
         <div id="audio" class="two-column-layout"> 
             <div>
                   <img src="Projects/BeachPic.jpg" alt="Beach at sunrise with seagulls flying over waves">
@@ -64,28 +58,7 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
         </div>
-        <script>
-            let slideIndex = 0;
-            showSlides();
-            
-            function showSlides() 
-            {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 5000); // Change image every 5 seconds
-            }
-            </script>
+       
     </body>
     <footer>
 
