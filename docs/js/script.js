@@ -39,7 +39,7 @@ alt="Overhead view of a crochet shawl on top of a flower blanket">
 <h3>
     Crochet
 </h3>
-<p>Crocheting is super fun! </p>
+<p>Crocheting is super fun!</p>
 </div>;
 
 window.addEventListener("load", (event) => {
