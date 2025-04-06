@@ -118,12 +118,12 @@ img.github-header {
   padding: 10px;
 }
 
-/* .scroll-container {
+.scroll-container {
   overflow: scroll;
   max-height: 10%;
-  scrollbar-color: rgb(38, 4, 70) orange;
+  scrollbar-color: rgb(38, 4, 70) rgb(93, 248, 212);
   scrollbar-width: thin;
-} */
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
