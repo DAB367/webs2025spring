@@ -1,7 +1,3 @@
-let pictures = [
-    "img/Waimea.jpg",
-    "img/Waimea1.jpg"
-]
 
 let slideIndex = 0;
 showSlides();
@@ -55,5 +51,4 @@ const hoverOverCardTemplate = <img id="crochet" class="mouseover-img" src="img/c
     Crochet
 </h3>
 <p>Crocheting is super fun!</p>
-</div>;
-
+</div>
