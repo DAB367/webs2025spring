@@ -96,7 +96,7 @@ img.github-header {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #008cba;
+  background-color: rgb(38, 4, 70);
   border-radius: 25px;
 }
 
