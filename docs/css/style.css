@@ -244,9 +244,9 @@ img.github-header {
 /**Add slideshow**/
 /* Slideshow container */
 .slideshow-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 /* Hide the images by default */
 .mySlides {
