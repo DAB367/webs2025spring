@@ -170,6 +170,10 @@ img.github-header {
 }
 
 /***** Navigation menu styling *****/
+#navbar {
+  position: sticky;
+  top: 0;
+}
 .primary-navigation {
   background-color: rgb(38, 4, 70); /* Dark Purple */
   margin: 0px;
