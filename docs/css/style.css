@@ -168,11 +168,15 @@ img.github-header {
     }
   }
 }
-
+.link{
+  color:#ffffff;
+  text-decoration-style: wavy;
+}
 /***** Navigation menu styling *****/
 #navbar {
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 .primary-navigation {
   background-color: rgb(38, 4, 70); /* Dark Purple */
