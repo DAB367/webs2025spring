@@ -3,16 +3,16 @@
 }
 
 /**** Body ****/
+
 h1 {
   text-align: center;
+  font-family: Lucida Handwriting; Brush Script MT; fantasy; papyrus;
   font-size: clamp(
-    3rem,
+    2rem,
     4vw,
-    10rem
+    5rem
   ); /* Change is minimal since header is too small but wanted to add for practice. */
-  background-color: rgb(38, 4, 70);
-  padding: 10px;
-  color: #ffffff;
+  color: rgb(38, 4, 70);
   margin: 0%;
 }
 
@@ -168,6 +168,9 @@ img.github-header {
     }
   }
 }
+.page-link-target{
+  scroll-margin-top:1.5em;
+}
 .link{
   color:#ffffff;
   text-decoration-style: wavy;
@@ -176,14 +179,15 @@ img.github-header {
 #navbar {
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 1;
 }
+
 .primary-navigation {
   background-color: rgb(38, 4, 70); /* Dark Purple */
   margin: 0px;
   padding: 0px;
   height: 4em;
-  font-size: medium;
+  font-size: 1rem;
   display: flex; /* Arrange horizontally, not vertically */
   flex-wrap: wrap;
   list-style-type: none; /* Hide the bullets */
@@ -199,7 +203,7 @@ img.github-header {
   flex-wrap: wrap;
   margin: 0%;
   display: flex; /* Arrange horizontally, not vertically */
-  width: 60%;
+  width: 70%;
   height: 100%;
 }
 
@@ -210,7 +214,7 @@ img.github-header {
   margin: 0%;
   padding: .25rem 1rem;
   justify-content: right;
-  width: 40%;
+  width: 30%;
   height: 100%;
 }
 
