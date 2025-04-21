@@ -251,7 +251,53 @@ img.github-header {
   background-color: rgb(67, 149, 167); /*Light mint same as link color */
   height: 100%;
 }
+/*Mobile Navigation bar*/
+@media only screen and (max-width: 600px) {
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: rgb(38, 4, 70);
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
 
+.topnav {
+  overflow: hidden;
+  background-color: rgb(38, 4, 70);
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: rgb(38, 4, 70);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: rgb(200, 148, 249);
+  color: black;
+}
+
+.active {
+  background-color: rgb(38, 4, 70);
+  color: white;
+}
+}
 
 /**Add slideshow**/
 /* Slideshow container */
