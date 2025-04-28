@@ -3,34 +3,52 @@
 <header>
     <title>My first website</title>
     <link href=".\css\style.css" rel="stylesheet">
-    
+    <!-- This is for controlling the visible area of the user's viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/navbar-size-logic.js"></script>
 </header>
 
 <body>
-    <div class="topnav">
+    <!-- <div class="topnav">
 
         <a href="#home" class="active">Home</a>
         <div id="myLinks">
-          <a href="#projects">Projects</a>
-          <a href="#hobbies">Hobbies</a>
-          <a href="#contact">Contact Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact Me</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars fa-fa-bar" style='color: white'></i>
+            <i class="fa fa-bars fa-fa-bar" style='color: white'></i>
         </a>
-    </div>
+    </div> -->
     <div id="navbar" class="primary-navigation" aria-label="Primary Navigation">
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+        <ul id="left-menu">
+            <li><a class="primary-navigation-text" id="home-text" class="active" href="index.html">Home</a></li>
+            <li><a class="primary-navigation-button" class="active" href="index.html"><button
+                        class="primary-navigation-button"><img class="primary-navigation-button-img" id="home-icon"
+                            class="active" src="img/9004777_house_home_building_property_icon.svg"></button></a></li>
+            <li><a class="primary-navigation-text" id="projects-text" href="#projects">Projects</a></li>
+            <li><a class="primary-navigation-button" href="#projects"><button class="primary-navigation-button"><img
+                            class="primary-navigation-button-img" id="projects-icon"
+                            src="img/4308344_business_graph_presentation_project_icon.svg"></button></a></li>
+            <li><a class="primary-navigation-text" id="hobbies-text" href="#hobbies">Hobbies</a></li>
+            <li><a class="primary-navigation-button" href="#hobbies"><button class="primary-navigation-button"><img
+                            class="primary-navigation-button-img" id="hobbies-icon"
+                            src="img/4677547_beach_summer_umbrella_icon.svg"></button></a></li>
+            <li><a class="primary-navigation-text" id="contact-text" href="#contact">Contact Me</a></li>
+            <li><a class="primary-navigation-button" href="#contact"><button class="primary-navigation-button"><img
+                            class="primary-navigation-button-img" id="contact-icon"
+                            src="img/4677547_beach_summer_umbrella_icon.svg"></button></a></li>
         </ul>
-        <ul class="right">
+        <ul id="right-menu" class="right">
             <li><a href="https://github.com/DAB367"><img class="github-header" src="img/github-mark-white.png"
                         alt="A Headshot of Dana Briggs"></a></li>
             <li><img class="avatar-header" src="img/ProfessionalHeadShot.jpg" alt="A Headshot of Dana Briggs"></li>
         </ul>
+    </div>
+    <div class="header-background">
+        <img id="background-image-top" class="header-background"
+            src="img/vidar-nordli-mathisen-9HGqJq3vglc-unsplash.jpg" />
     </div>
     <div class="gutter scroll-container">
         <div class="two-column-layout">
@@ -142,12 +160,12 @@
                 <!--Empty for spacing-->
             </div>
         </div>
-        <br/>
+        <br />
         <h1 class="page-link-target" id="projects">
             Projects
         </h1>
         <div class="two-column-layout">
-            <div  class="card">
+            <div class="card">
                 <div class="img-hover-container">
                     <img class="mouseover-img" src="Projects/BeachPic.jpg"
                         alt="Beach at sunrise with seagulls flying over waves">
@@ -155,15 +173,15 @@
                         <audio controls class="controls">
                             <source src="Projects/BeachConversation.mp3" type="audio/mpeg" />
                         </audio>
-                        <p class="text">For more information on my project please <a class="link" 
-                            href="https://github.com/DAB367/audio-narrative-2025spring">Visit my AudioNarrative
-                            Github
-                            Repo.</a></p>
+                        <p class="text">For more information on my project please <a class="link"
+                                href="https://github.com/DAB367/audio-narrative-2025spring">Visit my AudioNarrative
+                                Github
+                                Repo.</a></p>
                     </div>
                     <div class="card-footer-container">
                         2A Beach Conversion</h3>
-                  
-                        <p >This is an audio narrative project that I completed for my Composing Digital
+
+                        <p>This is an audio narrative project that I completed for my Composing Digital
                             Media class in
                             Spring 2025.</p>
                     </div>
@@ -174,15 +192,15 @@
                     <img class="mouseover-img" src="Projects/AsFragileAsASpidersWeb.jpg"
                         alt="A spider's web with the Earth at it's center and fire starting to engulf it.">
                     <div class="overlay">
-                        <p class="text">For more information on my project please <a class="link" 
-                            href="https://github.com/DAB367/visual-argument-2025spring">Visit my Visual Argument
-                            Github
-                            Repo.</a></p>
-                        
+                        <p class="text">For more information on my project please <a class="link"
+                                href="https://github.com/DAB367/visual-argument-2025spring">Visit my Visual Argument
+                                Github
+                                Repo.</a></p>
+
                     </div>
                     <div class="card-footer-container">
                         2As Fragile as a spider's web</h3>
-                        <p >This is a visual argument project that I completed for my Composing Digital
+                        <p>This is a visual argument project that I completed for my Composing Digital
                             Media class in
                             Spring
                             2025.</p>
@@ -190,13 +208,13 @@
                 </div>
             </div>
         </div>
-        <br/>
+        <br />
         <h1 id="hobbies" class="page-link-target">
             Hobbies
         </h1>
         <div class="two-column-layout">
             <div class="card">
-                <div  class="img-hover-container">
+                <div class="img-hover-container">
                     <img id="crochet" class="mouseover-img" src="img/crochet.jpg"
                         alt="Overhead view of a crochet shawl on top of a flower blanket">
                     <div class="overlay">
@@ -241,40 +259,40 @@
                 <div class="img-hover-container">
                     <img id="pets" class="mouseover-img" src="img/Lady.jpg"
                         alt="Lady, a shetland sheepdog, with a crown on top of her head">
-                        <div class="overlay">
-                            <div class="text">
-                                <h3>
-                                    Pets
-                                </h3>
-                                <p>
-                                    Lady a shetland sheepdog
-                                </p>
-                            </div>
-                        </div>
-                        <div>
+                    <div class="overlay">
+                        <div class="text">
                             <h3>
                                 Pets
                             </h3>
-                            <p>I love dogs and currently have two dogs.</p>
+                            <p>
+                                Lady a shetland sheepdog
+                            </p>
                         </div>
+                    </div>
+                    <div>
+                        <h3>
+                            Pets
+                        </h3>
+                        <p>I love dogs and currently have two dogs.</p>
+                    </div>
                 </div>
             </div>
             <div class="card">
                 <div class="img-hover-container">
                     <!-- Slideshow container -->
                     <div id="hiking" class="slideshow-container">
-                            <div class="mySlides fade">
-                                <img src="img/Waimea.jpg" alt="">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="img/Waimea1.jpg" alt="">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="img/Kauai.jpg" alt="">
-                            </div>
-                            <div class="mySlides fade">
-                                <img src="img/kauai1.jpg" alt="">
-                            </div>
+                        <div class="mySlides fade">
+                            <img src="img/Waimea.jpg" alt="">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="img/Waimea1.jpg" alt="">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="img/Kauai.jpg" alt="">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="img/kauai1.jpg" alt="">
+                        </div>
                     </div>
                     <div class="overlay">
                         <div class="text">
@@ -296,9 +314,23 @@
             </div>
         </div> <!-- Close two column layout -->
     </div> <!-- Close gutter scroll-container-->
-    
+
+    <div class="container-flex-square-information">
+        <div class="container-squre-information">
+            <div class="square-information">Dana Briggs</div>
+            <div class="square-information"><a href="tel:+17078889253">Telephone</a></div>
+        </div>
+        <div class="container-squre-information">
+            <div class="square-information"><a href="mailto:dab367@pitt.edu">Email</a></div>
+            <div class="square-information"><a href="Briggs.Dana.pdf">Resume</a></div>
+        </div>
+        <div class="square-information">
+            <a href="https://github.com/DAB367/webs2025spring">For asset information please visit my repo.</a>
+        </div>
+    </div>
+
     <div class="footer footer-navigation" id="contact">
-        <ul>
+        <!-- <ul>
             <li>
                 Dana Briggs
             </li>
@@ -314,7 +346,7 @@
             <li>
                 <a href="https://github.com/DAB367/webs2025spring">For asset information please visit my repo.</a>
             </li>
-        </ul>
+        </ul> -->
     </div>
     <script src="js/carousel.js"></script>
 </body>

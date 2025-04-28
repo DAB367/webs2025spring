@@ -29,6 +29,26 @@ body {
   min-height: 100vh;
 }
 
+div.header-background {
+  margin:0;
+  padding-bottom: 10%;
+}
+
+p.header-background {
+  font-size: 3em;
+  color: white;
+  margin: -27% auto;
+}
+
+img.header-background {
+  position: relative;
+  margin:-10% auto;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  z-index: -1;
+}
+
 img.avatar {
   display: block;
 }
@@ -39,7 +59,7 @@ img.avatar-header {
 }
 img.github-header {
   height: 2em;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   border-radius: 50%;
 }
 
@@ -84,6 +104,37 @@ img.github-header {
   width: 100%;
   height: auto;
   border-radius: 25px 25px 0px 0px;
+}
+
+.container-flex-square-information {
+  margin: auto;
+  width: 50%;
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: red;
+  opacity: 85%;
+  gap: 10px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 0px 1px 1px white,0px 0px 10px 10px grey;
+}
+
+.container-squre-information {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  gap: 10px 10px;
+}
+
+.square-information {
+  background-color:rgb(67, 149, 167);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .overlay {
@@ -184,13 +235,16 @@ img.github-header {
 
 .primary-navigation {
   background-color: rgb(38, 4, 70); /* Dark Purple */
-  margin: 0px;
+  margin: 1%;
+  opacity: 85%;
   padding: 0px;
   height: 4em;
   font-size: 1rem;
   display: flex; /* Arrange horizontally, not vertically */
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: non-wrap;
   list-style-type: none; /* Hide the bullets */
+
 }
 
 .primary-navigation a {
@@ -202,9 +256,11 @@ img.github-header {
   list-style-type: none; /* Hide the bullets */
   flex-wrap: wrap;
   margin: 0%;
+  padding: 0;
   display: flex; /* Arrange horizontally, not vertically */
   width: 70%;
   height: 100%;
+  align-items: center;
 }
 
 .primary-navigation ul.right {
@@ -213,6 +269,7 @@ img.github-header {
   flex-wrap: wrap;
   margin: 0%;
   padding: .25rem 1rem;
+  align-items: flex-start;
   justify-content: right;
   width: 30%;
   height: 100%;
@@ -222,13 +279,28 @@ img.github-header {
   color: rgb(38, 4, 70); /* Dark Purple, same as navbar */
   padding: .55rem 1rem;
 }
+
+.primary-navigation-button {
+  height: 2rem;
+  width: auto;
+  opacity: 90%;
+  padding: .55rem 1rem;
+}
+
+
+.primary-navigation-button-img {
+  height: 100%;
+  opacity: 100;
+  width: auto;
+}
+
 .primary-navigation ul.right li a:hover {
   background-color: transparent; text-decoration: none
 }
 
 
 
-.primary-navigation li a {
+.primary-navigation-text {
   display: block;
   padding: 1em 2em; /* Add a little space around each link*/
   text-decoration-line: underline;
@@ -292,7 +364,9 @@ img.github-header {
   background-color: rgb(200, 148, 249);
   color: black;
 }
-
+.fa-fa-bar{
+  z-index: 3;
+}
 .active {
   background-color: rgb(38, 4, 70);
   color: white;
@@ -333,8 +407,7 @@ img.github-header {
   width: 100%;
 }
 
-
-.footer-navigation ul{
+/* .footer-navigation ul{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,7 +420,7 @@ img.github-header {
 
 .footer-navigation ul li a{
   color:rgb(254, 254, 254);
-}
+} */
 
 .btn-success{
   background-color: rgb(93, 248, 212);
